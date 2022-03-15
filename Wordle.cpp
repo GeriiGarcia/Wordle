@@ -95,7 +95,7 @@ int main()
 	}
 	
 	if (contadorPartidas <= 5)
-		cout << "Has gando!!" << endl;
+		cout << "Has ganado!!" << endl;
 	else
 	{
 		cout << "Has perdido" << endl<<endl;

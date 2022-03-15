@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <windows.h>
+#define color SetConsoleTextAttribute
 using namespace std;
 
 struct Palabra
@@ -17,8 +18,13 @@ void Menu()
 	
 } 
 
+
+
 int main()
 {
+	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
+ 
+ 	
 	string joc;
 	Palabra intento;
 	int contador = 0, contadorPartidas=0;
@@ -35,7 +41,7 @@ int main()
 		{
 			do
 			{
-				cout << "La paraula ha de tenir 5 lletres" << endl;
+				cout << "La palabra debe tener 5 letras" << endl;
 				cin >> intento.pal;
 			} while (intento.pal.length() != 5);
 		}
@@ -59,12 +65,15 @@ int main()
 				{
 					if (j == i)
 					{
+						color(hConsole, 2);
 						cout << " Verde ";
-						//j = 5; en teoria tiene que funcionar sin esto
+						color(hConsole, 7);	
 					}
 					else
 					{
+						color(hConsole, 6);
 						cout << " Amarillo ";
+						color(hConsole, 7);
 					}
 
 				}
@@ -73,7 +82,9 @@ int main()
 					contador++;
 					if (contador == 5)
 					{
+						color(hConsole, 8);	
 						cout << " Gris ";
+						color(hConsole, 7);	
 					}
 				}
 			}

@@ -8,12 +8,12 @@ struct Palabra
 };
 void Menu()
 {
-	cout << "Bienvenido a Wordle!!" << endl << endl <<  "Supongo que ya sabes como va este juego mi rey, pero te lo explico un poquito." << endl << endl;
+	cout << "Bienvenido a Wordle!!" << endl << endl <<  "Supongo que ya sabes como va este juego, pero te lo explico un poquito." << endl << endl;
 	cout << "Tienes que adivinar una palabra secreta de 5 letras, para ello tienes que ir poniendo palabras de 5 letras." << endl;
 	cout << "Despues de poner la palabra te saldran diferentes colores."<<endl<< "Si el color es Verde y esta en la primera posicion, es que la primera" << endl;
 	cout << "letra que has puesto esta en la posicion acertada," <<endl <<"si es Amarillo es que la letra que has puesto esta en la palabra secreta pero no en esa posicion" << endl;
 	cout << "Si pone gris es que la letra no esta en la palabra secreta.           TIENES 5 INTENTOS." << endl;
-	cout << "Suerte mi rey" << endl;
+	
 } 
 
 int main()
@@ -83,11 +83,11 @@ int main()
 	}
 	
 	if (contadorPartidas <= 5)
-		cout << "Has guanyat!!" << endl;
+		cout << "Has gando!!" << endl;
 	else
 	{
-		cout << "Has perdut ma bro" << endl<<endl;
-		cout << "La paraula era " << joc;
+		cout << "Has perdido" << endl<<endl;
+		cout << "La palabra era " << joc;
 	}
 
 

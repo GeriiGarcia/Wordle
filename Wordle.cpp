@@ -20,7 +20,7 @@ int main()
 {
 	string joc;
 	Palabra intento;
-	int contador = 0, contadorPartidas=0, cosa;
+	int contador = 0, contadorPartidas=0;
 	bool Juego = 0;
 	joc = "REINA";
 	Menu();
@@ -91,6 +91,6 @@ int main()
 	}
 
 
-	cin >> cosa;
+	system("pause");
 	return 0;
 }

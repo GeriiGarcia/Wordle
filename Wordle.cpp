@@ -51,7 +51,7 @@ int main()
 		int i = (rand()%10)+1;
 		joc=jocSelect.pal[i];
 	
-		while ((contadorPartidas < 5))
+		while ((contadorPartidas < 5)&&Juego==0)
 		{
 			cin >> intento;
 

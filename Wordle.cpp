@@ -85,14 +85,16 @@ int main()
 						if (j == i)
 						{
 							color(hConsole, 2);
-							cout << " Verde ";
+							cout<<intento[i];
+							//cout << " Verde ";
 							color(hConsole, 7);	
 				
 						}
 						else
 						{
 							color(hConsole, 6);
-							cout << " Amarillo ";
+							cout<<intento[i];
+							//cout << " Amarillo ";
 							color(hConsole, 7);
 						}
 
@@ -103,7 +105,8 @@ int main()
 						if (contador == 5)
 						{
 							color(hConsole, 8);	
-							cout << " Gris ";
+							cout<<intento[i];
+							//cout << " Gris ";
 							color(hConsole, 7);	
 						}
 					}
@@ -114,7 +117,7 @@ int main()
 			contadorPartidas++;
 		}
 	
-		if (contadorPartidas < 5)
+		if (contadorPartidas <= 5)
 			cout << "Has ganado!!" << endl;
 		else
 		{
